@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Customer Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #8e44ad, #5a3495);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            max-width: 350px;
+            width: 100%;
+            text-align: center;
+            border: 2px solid #007BFF;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            max-width: 100px;
+        }
+
+        h1 {
+            color: #007BFF;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="number"],
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Additional Styling */
+        .input-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-container:last-child {
+            margin-bottom: 0;
+        }
+
+        .input-label {
+            font-size: 14px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .input-submit {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .input-submit:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://cdn.dribbble.com/users/5214489/screenshots/14862674/jb_bj_logo_letter_design.jpg" alt="Bank Logo">
+        </div>
+        <h1>Create Customer Account</h1>
+        <form action="createcustomer" method="post">
+            <div class="input-container">
+                <label class="input-label" for="id">Gov ID:</label>
+                <input class="input-field" type="number" id="id" name="id" placeholder="Enter your Gov ID" required>
+            </div>
+
+            <div class="input-container">
+                <label class="input-label" for="name">Name:</label>
+                <input class="input-field" type="text" id="name" name="name" placeholder="Enter your Name" required>
+            </div>
+
+            <div class="input-container">
+                <label class="input-label" for="name">Name:</label>
+                <input class="input-field" type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+
+            <div class="input-container">
+                <label class="input-label" for="pincode">Pincode:</label>
+                <input class="input-field" type="number" id="pincode" name="pincode" placeholder="Enter your Pincode" required>
+            </div>
+
+            <input class="input-submit" type="submit" value="Create Account">
+        </form>
+    </div>
+</body>
+</html>
